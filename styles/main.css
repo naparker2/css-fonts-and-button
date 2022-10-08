@@ -1,13 +1,13 @@
 :root {
   --dark-navy: #02064a;
   --ming: #15616d;
-  --orange: #ff7d00;
+  --orange: #a54f36;
   --kobe: #78290f;
 }
 
 * {
   box-sizing: border-box;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 h1 {
@@ -15,11 +15,14 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   color: var(--dark-navy);
+  line-height: 3rem;
+  /* margin-block-start: 2rem; */
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   color: var(--kobe);
+  /* line-height: 2rem; */
 }
 
 h3 {
@@ -27,8 +30,18 @@ h3 {
   color: var(--kobe);
 }
 
+header {
+  background-color: var(--orange);
+  padding: 1.5rem;
+  color: #eee;
+}
 p {
   max-width: 70ch;
+  /* margin-block-end: 1.5rem; */
+}
+
+li {
+  text-decoration: none;
 }
 
 main {
@@ -45,17 +58,19 @@ body {
   line-height: 1.5rem;
 }
 
-.button {
+a[href] {
   border: 2px solid var(--ming);
   padding: 0.5rem;
   transition: background-color 300ms;
   border-radius: 0.4rem;
-  text-transform: uppercase;
+  text-decoration: none;
   font-size: 0.7rem;
   font-weight: bold;
+  color: #333;
+  margin-top: 0.4rem;
 }
 
-.button:hover {
+a[href]:hover {
   background-color: var(--ming);
   color: #fff;
 }
