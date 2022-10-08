@@ -22,6 +22,7 @@ h1 {
 h2 {
   font-family: "Montserrat", sans-serif;
   color: var(--kobe);
+  padding-top: 0.5rem;
   /* line-height: 2rem; */
 }
 
@@ -37,11 +38,12 @@ header {
 }
 p {
   max-width: 70ch;
-  /* margin-block-end: 1.5rem; */
+  padding: 0.5rem 0;
 }
 
-li {
+#list #listtwo {
   text-decoration: none;
+  color: #eee;
 }
 
 main {
@@ -57,20 +59,24 @@ body {
   color: #333;
   line-height: 1.5rem;
 }
-
 a[href] {
+  text-decoration: none;
+  color: #eee;
+}
+a[href].button {
   border: 2px solid var(--ming);
   padding: 0.5rem;
   transition: background-color 300ms;
   border-radius: 0.4rem;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #333;
   margin-top: 0.4rem;
+  cursor: pointer;
 }
 
-a[href]:hover {
+a[href].button:hover {
   background-color: var(--ming);
   color: #fff;
 }
