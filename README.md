@@ -1,4 +1,5 @@
 <!-- cSpell:enable  -->
+This is a website about peacocks. I thought my style guide colors were similar to peacocks. 
 
 # CSS fonts and a button
 
